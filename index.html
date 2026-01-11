@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIRO Brands</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Netlify form detection -->
+  <meta name="robots" content="index, follow" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <header class="nav">
+      <img src="logo.svg" alt="NIRO Brands" class="logo">
+    </header>
+
+    <div class="hero-content">
+      <h1>
+        Science-informed products designed to support people on their quit journey.
+      </h1>
+
+      <p class="tagline">Pharma, done better.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content">
+    <h2>About NIRO</h2>
+    <p>
+      NIRO builds evidence-led products designed to support people looking to quit
+      smoking and vaping. Our focus is on clinically informed development, quality
+      manufacturing, and clear, honest communication.
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact</h2>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
