@@ -1,57 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NIRO Brands</title>
-
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Netlify form detection -->
-  <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIRO Brands - Clinically backed products to help people quit</title>
+    <meta name="description" content="Science-informed products designed to support people on their quit journey. Pharma, done better.">
+ <link rel="stylesheet" href="/NiroBrandsWebsite/style.css">
 </head>
-
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- HERO -->
-  <section class="hero">
-    <header class="nav">
-      <img src="logo.svg" alt="NIRO Brands" class="logo">
+    <header>
+        <nav class="container">
+            <a href="/" class="logo" aria-label="NIRO Brands Home">
+                <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10 L15 40 L25 25 L35 40 L35 10" stroke="url(#gradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4a9b8e;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#2d5f5d;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">NIRO</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#products" class="dropdown">Products</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#science">Our science</a></li>
+                <li><a href="#get-started" class="cta-button">Get started</a></li>
+            </ul>
+
+            <button class="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
-    <div class="hero-content">
-      <h1>
-        Science-informed products designed to support people on their quit journey.
-      </h1>
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <h1>Clinically backed products to help people quit — for good.</h1>
+                <p class="hero-subtitle">Pharma, done better.</p>
+                <a href="#products" class="cta-button">Explore products</a>
+            </div>
+        </section>
 
-      <p class="tagline">Pharma, done better.</p>
-    </div>
-  </section>
+        <section class="hero-features">
+            <div class="container">
+                <div class="feature-item">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11l3 3L22 4" />
+                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quit Smoking</h3>
+                        <p>Proven therapies to help you quit smoking</p>
+                    </div>
+                </div>
 
-  <!-- CONTENT -->
-  <section class="content">
-    <h2>About NIRO</h2>
-    <p>
-      NIRO builds evidence-led products designed to support people looking to quit
-      smoking and vaping. Our focus is on clinically informed development, quality
-      manufacturing, and clear, honest communication.
-    </p>
-  </section>
+                <div class="feature-item">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 3v4M8 3v4M2 11h20" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quit Vaping</h3>
+                        <p>Proven therapies to help you quit vaping</p>
+                    </div>
+                </div>
 
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Contact</h2>
+                <div class="feature-item">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M7 15h10M7 11h10" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Nicotine Support</h3>
+                        <p>Nicotine aides tailored to your needs.</p>
+                    </div>
+                </div>
 
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
+                <div class="feature-item">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Coming Soon</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <input type="text" name="name" placeholder="Name" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="message" placeholder="Message" required></textarea>
+        <section class="approach-section">
+            <div class="container">
+                <h2>Finally, a smarter approach to quitting.</h2>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+                <div class="approach-grid">
+                    <article class="approach-card green">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                <path d="M22 4L12 14.01l-3-3" />
+                            </svg>
+                        </div>
+                        <h3>Evidence-led products</h3>
+                        <p>Built using proven active ingredients.</p>
+                        <a href="#evidence" class="arrow-link">
+                            Learn more
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
 
+                    <article class="approach-card blue">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                        </div>
+                        <h3>Human-centred design</h3>
+                        <p>Easy to understand. Easy to use.</p>
+                        <a href="#design" class="arrow-link">
+                            Learn more
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <article class="approach-card purple">
+                        <div class="card-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                        </div>
+                        <h3>Support beyond the product</h3>
+                        <p>Guidance, tools, and progress tracking.</p>
+                        <a href="#support" class="arrow-link">
+                            Learn more
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="center-button">
+                    <a href="#how-it-works" class="cta-button">
+                        How it works
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-section">
+            <div class="container">
+                <h2>Clinically guided, regulator-aligned, and manufactured to the highest quality standards.</h2>
+
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+                        </svg>
+                        <span>Regulator-aligned</span>
+                    </div>
+
+                    <div class="quality-item">
+                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                        <span>cGMP manufactured</span>
+                    </div>
+
+                    <div class="quality-item">
+                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18" />
+                            <path d="M18 17V9M13 17V5M8 17v-3" />
+                        </svg>
+                        <span>Evidence-led development</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <svg width="140" height="50" viewBox="0 0 140 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 10 L15 40 L25 25 L35 40 L35 10" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <text x="50" y="32" fill="white" font-size="24" font-weight="700">NIRO</text>
+                            <text x="50" y="45" fill="rgba(255,255,255,0.7)" font-size="11">Brands</text>
+                        </svg>
+                    </div>
+                    <p class="footer-tagline">Pharma, done better.™</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div>
+                        <ul>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#how-it-works">How it works</a></li>
+                            <li><a href="#science">Our science</a></li>
+                            <li><a href="#safety">Safety & usage</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms</a>
+                    <span style="color: rgba(255,255,255,0.4);">🇦🇺 Australia</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="#facebook" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#twitter" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
