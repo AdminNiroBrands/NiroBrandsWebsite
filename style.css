@@ -564,9 +564,10 @@ input:focus, textarea:focus{
 @media (max-width: 640px){
   :root{ --pad-x: 18px; }
   .hero{ padding: 54px 0 34px; }
-  .features-card{ grid-template-columns: 1fr; }
-  .carousel{ grid-template-columns: 40px 1fr 40px; }
+  .features-card{ grid-template-columns: 0.8fr; }
+  .carousel{ grid-template-columns: 1fr  }
   .carousel-slide{ width: 240px; } /* keep decent size on mobile */
+  .carousel-btn{ display: none; }
   .form-row{ grid-template-columns: 1fr; }
   .hero-wave{ right: -220px; top: -180px; }
 }
