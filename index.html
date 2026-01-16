@@ -1,249 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIRO Brands - Clinically backed products to help people quit</title>
-    <meta name="description" content="Science-informed products designed to support people on their quit journey. Pharma, done better.">
- <link rel="stylesheet" href="/NiroBrandsWebsite/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIRO Brands</title>
+  <meta name="description" content="Science-informed products designed to support people on their quit journey. Pharma, done better.">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="#main" class="logo" aria-label="NIRO Brands Home">
+        <img src="images/logo.png" alt="NIRO logo">
+      </a>
 
-    <header>
-        <nav class="container">
-            <a href="/" class="logo" aria-label="NIRO Brands Home">
-                <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 10 L15 40 L25 25 L35 40 L35 10" stroke="url(#gradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                    <defs>
-                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#4a9b8e;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#2d5f5d;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span class="logo-text">NIRO</span>
-            </a>
+      <ul class="nav-links">
+        <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+      </ul>
 
-            <ul class="nav-links">
-                <li><a href="#products" class="dropdown">Products</a></li>
-                <li><a href="#how-it-works">How it works</a></li>
-                <li><a href="#science">Our science</a></li>
-                <li><a href="#get-started" class="cta-button">Get started</a></li>
-            </ul>
+      <button class="mobile-menu-button" aria-label="Open menu" aria-expanded="false" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-            <button class="mobile-menu-button" aria-label="Open menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
-
-    <main id="main">
-        <section class="hero">
-            <div class="container">
-                <h1>Clinically backed products to help people quit — for good.</h1>
-                <p class="hero-subtitle">Pharma, done better.</p>
-                <a href="#products" class="cta-button">Explore products</a>
-            </div>
-        </section>
-
-        <section class="hero-features">
-            <div class="container">
-                <div class="feature-item">
-                    <div class="feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 11l3 3L22 4" />
-                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Quit Smoking</h3>
-                        <p>Proven therapies to help you quit smoking</p>
-                    </div>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="7" width="20" height="14" rx="2" />
-                            <path d="M16 3v4M8 3v4M2 11h20" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Quit Vaping</h3>
-                        <p>Proven therapies to help you quit vaping</p>
-                    </div>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <path d="M7 15h10M7 11h10" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Nicotine Support</h3>
-                        <p>Nicotine aides tailored to your needs.</p>
-                    </div>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
-                        </svg>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Coming Soon</h3>
-                        <p>...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="approach-section">
-            <div class="container">
-                <h2>Finally, a smarter approach to quitting.</h2>
-
-                <div class="approach-grid">
-                    <article class="approach-card green">
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-                                <path d="M22 4L12 14.01l-3-3" />
-                            </svg>
-                        </div>
-                        <h3>Evidence-led products</h3>
-                        <p>Built using proven active ingredients.</p>
-                        <a href="#evidence" class="arrow-link">
-                            Learn more
-                            <span aria-hidden="true">→</span>
-                        </a>
-                    </article>
-
-                    <article class="approach-card blue">
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                                <circle cx="12" cy="7" r="4" />
-                            </svg>
-                        </div>
-                        <h3>Human-centred design</h3>
-                        <p>Easy to understand. Easy to use.</p>
-                        <a href="#design" class="arrow-link">
-                            Learn more
-                            <span aria-hidden="true">→</span>
-                        </a>
-                    </article>
-
-                    <article class="approach-card purple">
-                        <div class="card-icon" aria-hidden="true">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                            </svg>
-                        </div>
-                        <h3>Support beyond the product</h3>
-                        <p>Guidance, tools, and progress tracking.</p>
-                        <a href="#support" class="arrow-link">
-                            Learn more
-                            <span aria-hidden="true">→</span>
-                        </a>
-                    </article>
-                </div>
-
-                <div class="center-button">
-                    <a href="#how-it-works" class="cta-button">
-                        How it works
-                        <span aria-hidden="true">→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="quality-section">
-            <div class="container">
-                <h2>Clinically guided, regulator-aligned, and manufactured to the highest quality standards.</h2>
-
-                <div class="quality-grid">
-                    <div class="quality-item">
-                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
-                        </svg>
-                        <span>Regulator-aligned</span>
-                    </div>
-
-                    <div class="quality-item">
-                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            <path d="M9 12l2 2 4-4" />
-                        </svg>
-                        <span>cGMP manufactured</span>
-                    </div>
-
-                    <div class="quality-item">
-                        <svg class="quality-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 3v18h18" />
-                            <path d="M18 17V9M13 17V5M8 17v-3" />
-                        </svg>
-                        <span>Evidence-led development</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <div class="footer-logo">
-                        <svg width="140" height="50" viewBox="0 0 140 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 10 L15 40 L25 25 L35 40 L35 10" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                            <text x="50" y="32" fill="white" font-size="24" font-weight="700">NIRO</text>
-                            <text x="50" y="45" fill="rgba(255,255,255,0.7)" font-size="11">Brands</text>
-                        </svg>
-                    </div>
-                    <p class="footer-tagline">Pharma, done better.™</p>
-                </div>
-
-                <div class="footer-nav">
-                    <div>
-                        <ul>
-                            <li><a href="#products">Products</a></li>
-                            <li><a href="#how-it-works">How it works</a></li>
-                            <li><a href="#science">Our science</a></li>
-                            <li><a href="#safety">Safety & usage</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms</a>
-                    <span style="color: rgba(255,255,255,0.4);">🇦🇺 Australia</span>
-                </div>
-
-                <div class="social-links">
-                    <a href="#facebook" aria-label="Facebook">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                        </svg>
-                    </a>
-                    <a href="#twitter" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Built for shoppers. Designed for shelf. Backed by science.</h1>
+          <h2 class="hero-subtitle">Pharma, done better.</h2>
         </div>
-    </footer>
+
+        <!-- Decorative gradient wave/blob -->
+        <div class="hero-wave" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container features-card">
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+            </svg>
+          </div>
+          <div class="feature-body">
+            <h3>Quit Smoking</h3>
+            <p>Evidence-led products designed to support a quit attempt.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3v4M8 3v4M2 11h20"/>
+            </svg>
+          </div>
+          <div class="feature-body">
+            <h3>Quit Vaping</h3>
+            <p>Support products and resources for people reducing or quitting vaping.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="M7 15h10M7 11h10"/>
+            </svg>
+          </div>
+          <div class="feature-body">
+            <h3>Nicotine Support</h3>
+            <p>Options that may be used alongside a quit plan, depending on individual needs.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div class="feature-body">
+            <h3>Coming Soon</h3>
+            <p>Additional products and formats in development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS CAROUSEL -->
+   <section class="section" id="brands" aria-label="Our brands">
+      <div class="container">
+        <div class="section-header">
+          <h2>OUR BRANDS</h2>
+        </div>
+
+        <div class="carousel" data-carousel="brands">
+          <button class="carousel-btn prev" type="button" aria-label="Previous brand">
+            <span aria-hidden="true">‹</span>
+          </button>
+
+          <div class="carousel-viewport">
+            <div class="carousel-track" role="list">
+              <article class="brand-card carousel-slide" role="listitem">
+                <div class="brand-media">
+                  <img src="images/curbi.png" alt="Curbi concept packaging">
+                  <span class="badge">Concept only</span>
+                </div>
+                <h3 class="brand-title">Curbi</h3>
+                <p class="brand-desc">Quit support products designed to help manage cravings and keep you on track.</p>
+                <a class="brand-link" href="#contact">Enquire →</a>
+              </article>
+
+              <article class="brand-card carousel-slide" role="listitem">
+                <div class="brand-media">
+                  <img src="images/buzy-brainz.png" alt="Buzy Brainz concept packaging">
+                  <span class="badge">Concept only</span>
+                </div>
+                <h3 class="brand-title">Buzy Brainz</h3>
+                <p class="brand-desc">Everyday support products for focus, calm, and sleep routines.</p>
+                <a class="brand-link" href="#contact">Enquire →</a>
+              </article>
+
+              <article class="brand-card carousel-slide" role="listitem">
+                <div class="brand-media">
+                  <img src="images/conception.png" alt="Prep’d concept packaging">
+                  <span class="badge">Concept only</span>
+                </div>
+                <h3 class="brand-title">Prep’d</h3>
+                <p class="brand-desc">Daily hydration + vitamin support designed for modern routines.</p>
+                <a class="brand-link" href="#contact">Enquire →</a>
+              </article>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" type="button" aria-label="Next brand">
+            <span aria-hidden="true">›</span>
+          </button>
+
+          <div class="carousel-dots" aria-label="Brand carousel pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-about" id="about">
+      <div class="container about-grid">
+        <h2 class="about-title">ABOUT NIRO</h2>
+
+        <div class="about-copy">
+          <p>
+NIRO is focused on creating innovative, efficacious pharma and consumer-health brands - built properly, backed by science, and designed for modern consumers.
+We are shopper and retailer first in everything we do. That means developing products that make sense on shelf, within category, and at the point of decision - not just on paper.
+From formulation and claims to packaging, pricing, and range architecture, NIRO brands are designed to be commercially smart, credible, and easy to execute. We build products that solve real consumer needs, earn trust with retailers, and contribute meaningfully to category growth.
+          </p>
+          <p class="muted">
+Pharma, done better.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <h2>CONTACT US</h2>
+          <p>For partnership, manufacturing, retail, or distribution enquiries.</p>
+        </div>
+
+        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact"/>
+
+          <div class="form-row">
+            <label class="field">
+              <span>First name</span>
+              <input type="text" name="firstName" autocomplete="given-name"/>
+            </label>
+
+            <label class="field">
+              <span>Last name</span>
+              <input type="text" name="lastName" autocomplete="family-name"/>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email"/>
+          </label>
+
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="images/logo.png" alt="NIRO logo">
+        <p class="footer-tagline">NIRO Brands respects your privacy. Personal information is collected and handled in accordance with the Australian Privacy Act 1988 (Cth) and Australian Privacy Principles. Information is used solely to operate this website, respond to enquiries, and improve our services.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
